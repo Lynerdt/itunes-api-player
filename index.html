@@ -8,13 +8,22 @@
     <title>Music Search</title>
   </head>
   <body>
-    <h1>Preview Your Favorite Artist</h1>
-    <h2>Search Artist Name</h2>
-    <form action="" id="searchForm">
-      <input type="text" name="searchField" id="searchField" required />
-      <button type="submit" id="searchButton">Search</button>
+    <nav>
+      <h1>Preview Your Favorite Artist</h1>
+    </nav>
+    <figure>
+      <audio src="" id="previewUrl" controls></audio>
+
+      <figcaption id="trackName">Now playing:</figcaption>
+    </figure>
+
+    <form action="" id="inputForm">
+      <input type="text" placeholder="search music by artist or track" name="inputField" id="inputField" />
+      <button type="submit" id="inputButton">Search</button>
     </form>
-    <div id="preview"></div>
+
+    <h4>Search Results</h4>
+    <h3 id="results"></h3>
     <div id="container"></div>
   </body>
 </html>
